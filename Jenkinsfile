@@ -19,12 +19,8 @@ pipeline {
     }
 	post {
 		failure {
-			mail (
-				to: 'revitalb10@gmail.com',
-				from: 'Jenkins',
-				subject: '$JOB_NAME - Build # $BUILD_NUMBER - ${currentBuild.currentResult}!',
-                body: '$JOB_NAME - Build # $BUILD_NUMBER - ${currentBuild.currentResult}: Check console output at $BUILD_URL to view the results.'
-			);
+			mail to: 'revitalb10@gmail.com',
+			from: 'Jenkins',
 		}
 	}
 }
