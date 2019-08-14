@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent {label 'Revital-PC'}
     stages {
         stage('clone proj') {
             steps {
