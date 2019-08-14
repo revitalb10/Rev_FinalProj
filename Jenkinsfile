@@ -8,7 +8,7 @@ pipeline {
         }
        stage('Docker compose') {
             steps {
-               bat 'docker compose up d'
+               bat 'docker-compose up -d'
             }
         }   
        stage('Run Selenium test') {
