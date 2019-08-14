@@ -13,7 +13,7 @@ content = driver.find_element_by_xpath("/html/body").text
 
 #remove World from print
 string = re.sub('World', '', content)
-print(strin)
+print(string)
 
 
 
