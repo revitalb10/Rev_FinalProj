@@ -15,7 +15,7 @@ pipeline {
             steps {
                bat 'python FinalProj.py'
             }
-        }      
+              
 			post {
 				failure {
 				mail to: 'revitalb10@gmail.com',
@@ -26,5 +26,6 @@ pipeline {
 				mimeType: 'text/html'
 				}
 			}
+		}
     }
 }
