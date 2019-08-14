@@ -22,10 +22,8 @@ pipeline {
 			mail (
 				to: 'revitalb10@gmail.com',
 				from: 'Jenkins',
-				subject: '</b><br>Project: $JOB_NAME  <br>Build Number: $BUILD_NUMBER'
-				body: '<b>The below build FAILED on Jenkins: </b><br>Project: $JOB_NAME <br>Build Number: $BUILD_NUMBER ',
-				charset: 'UTF-8',
-				mimeType: 'text/html'
+				subject: '$JOB_NAME - Build # $BUILD_NUMBER - ${currentBuild.currentResult}!',
+                body: '$JOB_NAME - Build # $BUILD_NUMBER - ${currentBuild.currentResult}: Check console output at $BUILD_URL to view the results.'
 			);
 		}
 	}
