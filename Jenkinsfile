@@ -20,7 +20,7 @@ pipeline {
 	post {
 		failure {
 			mail to: 'revitalb10@gmail.com',
-			from: 'Jenkins',
+			from: 'Jenkins';
 		}
 	}
 }
