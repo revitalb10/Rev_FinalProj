@@ -22,8 +22,8 @@ pipeline {
 			mail (
 				to: 'revitalb10@gmail.com',
 				from: 'Jenkins',
-				subject:'FAILED !! Jenkins Build: Project name -> ${env.JOB_NAME}',
-				body: "<b>The below build FAILED on Jenkins: </b><br>Project: ${env.JOB_NAME} <br>Build Number: ${env.BUILD_NUMBER} <br>Branch: ${env.BRANCH_NAME} <br>Details in the URL: ${env.BUILD_URL}",
+				subject:'FAILED !! Jenkins Build: Project name -> $JOB_NAME',
+				body: "<b>The below build FAILED on Jenkins: </b><br>Project: $JOB_NAME <br>Build Number: $BUILD_NUMBER <br>Branch: $BRANCH_NAME <br>Details in the URL: $BUILD_URL",
 				charset: 'UTF-8',
 				mimeType: 'text/html'
 			);
