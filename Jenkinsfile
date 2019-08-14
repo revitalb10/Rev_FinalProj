@@ -16,8 +16,8 @@ pipeline {
                bat 'python FinalProj.py'
             }
         }      
-		post{
-			failure{
+		post {
+			failure {
 			mail to: 'revitalb10@gmail.com',
 			from: 'Jenkins',
 			subject:'FAILED !! Jenkins Build: Project name -> ${env.JOB_NAME}',
