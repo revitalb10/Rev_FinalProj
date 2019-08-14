@@ -1,4 +1,5 @@
 from selenium import webdriver
+import re
 
 SITE = "http://192.168.99.102:5000/"
 
@@ -9,7 +10,10 @@ driver.get(SITE)
 driver.implicitly_wait(20)
 #find string
 content = driver.find_element_by_xpath("/html/body").text
-print(content)
+
+#remove World from print
+string = re.sub('World', '', content)
+print(string)
 
 
 
