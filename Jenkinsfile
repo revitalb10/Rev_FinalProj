@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('clone proj') {
             steps {
-                git clone "https://github.com/revitalb10/Rev_FinalProj.git"
+                git url 'https://github.com/revitalb10/Rev_FinalProj.git'
             }
         }
        stage('Docker compose') {
