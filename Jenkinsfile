@@ -16,10 +16,5 @@ pipeline {
                bat 'python FinalProj.py'
             }
         }      
-       stage('Docker stop session') {
-            steps {
-               bat 'docker-compose stop'
-            }
-        }      
     }
 }
