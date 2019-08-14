@@ -22,7 +22,7 @@ pipeline {
 			mail (
 				to: 'revitalb10@gmail.com',
 				from: 'Jenkins',
-				subject: '$JOB_NAME - Build # $BUILD_NUMBER - ${currentBuild.currentResult}!'
+				subject: '</b><br>Project: $JOB_NAME  <br>Build Number: $BUILD_NUMBER'
 				body: '<b>The below build FAILED on Jenkins: </b><br>Project: $JOB_NAME <br>Build Number: $BUILD_NUMBER ',
 				charset: 'UTF-8',
 				mimeType: 'text/html'
