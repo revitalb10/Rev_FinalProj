@@ -1,6 +1,6 @@
 from selenium import webdriver
 
-SITE = "http://192.168.99.100:5000/"
+SITE = "http://192.168.99.102:5000/"
 
 
 # Use chrome as browser
